@@ -1,0 +1,29 @@
+:host() {
+    ::ng-deep app-filter-component {
+        .filter-input {
+            margin: 10px;
+        }
+    }
+
+    .switch-board {
+        display: flex;
+        justify-content: center;
+
+        label {
+            margin: 5px 15px;
+        }
+    }
+
+    ::ng-deep app-worker-card {
+        .worker-component {
+            margin: 10px;
+        }
+    }
+
+    ::ng-deep pagination-controls {
+       width: 100%;
+       text-align: right;
+    }
+
+    
+}

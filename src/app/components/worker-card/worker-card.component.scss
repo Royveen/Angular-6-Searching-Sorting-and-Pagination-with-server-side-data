@@ -1,0 +1,31 @@
+:host() {
+
+    .card-body {
+        text-align: center;
+    }
+
+    .deadline {
+        text-align: right;
+    }
+
+    .worker-details {
+        display: flex;
+        justify-content: center;
+        .worker-image {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        };
+
+        .details {
+            margin: 10px;
+            p {
+                margin-bottom: 0;
+            }
+            .company {
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

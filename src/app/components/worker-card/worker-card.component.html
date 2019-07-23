@@ -1,0 +1,22 @@
+<div class="worker-component" *ngIf="workOrder">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{workOrder.name}}</h5>
+      <p class="card-text">{{workOrder.description}}</p>
+
+      <div *ngIf="workOrder.workerDetails" class="worker-details">
+          <img [src]="workOrder.workerDetails.image" class="rounded-circle worker-image" alt="workOrder.workerDetails.name">
+          <div class="details">
+            <p>{{workOrder.workerDetails.name}}</p>
+            <p class="company"><strong>{{workOrder.workerDetails.companyName}}</strong></p>
+            <p>{{workOrder.workerDetails.email}}</p>
+          </div>
+      </div>
+
+      <div class="deadline">
+          <small>{{workOrder.deadline | date:'M/dd/yyyy, h:mm:ss a'}}</small>
+      </div>
+      
+    </div>
+  </div>
+</div>

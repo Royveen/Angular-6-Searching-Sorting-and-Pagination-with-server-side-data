@@ -1,0 +1,15 @@
+<div class="main">
+    <app-filter-component (filterValue) = "filterBy($event)"></app-filter-component>
+    <div class="switch-board">
+        <label> Earliest First </label>
+        <app-switch (value)="sortBy($event)"></app-switch>
+        <label> Latest First </label>
+    </div>
+  <div *ngIf="workOrders.length > 0" class="row">
+    <div *ngFor="let order of workOrders | paginate: paginationConfig" class="col-md-6">
+        <app-worker-card [workOrder]=order></app-worker-card>
+    </div>
+      <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+  </div>
+  
+</div>
