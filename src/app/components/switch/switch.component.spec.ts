@@ -22,4 +22,18 @@ describe('SwitchComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should emit value', () => {
+
+   spyOn(component.value, 'emit');
+
+   // trigger the click
+   const nativeElement = fixture.nativeElement;
+   const input = nativeElement.querySelector('input');
+   input.dispatchEvent(new Event('click'));
+
+   fixture.detectChanges();
+
+   expect(component.value.emit).toHaveBeenCalled();
+  });
 });

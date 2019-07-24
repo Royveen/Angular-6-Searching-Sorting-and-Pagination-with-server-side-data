@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, SimpleChanges, OnChanges, SimpleChange } from '@angular/core';
 import {WorkerService} from '../../services/worker.service';
-import { WorkOrderModel, WorkerModel } from '../../models/workOrderModel';
+import { WorkOrderModel } from '../../models/workOrderModel';
 
 @Component({
   selector: 'app-worker-card',
