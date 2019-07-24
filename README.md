@@ -1,14 +1,14 @@
 # FrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
+A Simple and Efficient Searching , Sorting and pagination for Angular Application with server side data and different reusable components.It can be integrated and easily used in any application.
 
-## Development server
+Note: Please make sure latest version of angular-cli and NodeJs is installed in your system.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run with Development server
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone the repository in HDD.
+Open Command Prompt on the HDD Location and run `npm install`, it will install all the dependencies.
+Run `ng serve` on command prompt for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
