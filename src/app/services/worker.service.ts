@@ -10,9 +10,9 @@ import { WorkOrderModel, WorkerModel ,
 })
 export class WorkerService {
 
-  public workOrderURL = 'https://www.hatchways.io/api/assessment/work_orders';
+  public workOrderURL = '';
 
-  public workerURL = ' https://www.hatchways.io/api/assessment/workers/';
+  public workerURL = '';
 
   public workOrders: WorkOrderModel[] = [];
 
